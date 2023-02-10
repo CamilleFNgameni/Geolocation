@@ -8,6 +8,7 @@ pipeline {
 }
 
    }
+
     stages {
         stage('maven package') {
             steps {
@@ -23,6 +24,7 @@ pipeline {
                 
             }
         }
+       
         stage('deploy') {
             steps {
                 echo 'deploy'
